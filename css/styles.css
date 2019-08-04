@@ -1,0 +1,503 @@
+/* copperplate typekit */
+@font-face {
+  font-family: 'copperplate';
+  src : url("https://use.typekit.net/rvi3agd.css");
+  font-weight: 300;/* copperplate light */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'copperplate';
+  src : url("https://use.typekit.net/rvi3agd.css");
+  font-weight: 500;/* copperplate medium */
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'copperplate';
+  src : url("https://use.typekit.net/rvi3agd.css");
+  font-weight: 700;/* copperplate bold */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'copperplate-condensed';
+  src : url("https://use.typekit.net/rvi3agd.css");
+  font-weight: 300;/* copperplate light condensed */
+  font-style: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: 'copperplate-condensed';
+  src : url("https://use.typekit.net/rvi3agd.css");
+  font-weight: 500;/* copperplate medium condensed */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'copperplate-condensed';
+  src : url("https://use.typekit.net/rvi3agd.css");
+  font-weight: 700;/* copperplate bold condensed */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+/* @import url("https://use.typekit.net/rvi3agd.css"); */
+
+/* Copperplate Gothic made from Font Converter */
+@font-face {
+  font-family: 'Copperplate Gothic 29AB';;
+  src : url('../fonts/copperplateGothic/CoppeTweNinAB/CoppeTweNinAB.eot');
+  src : url('../fonts/copperplateGothic/CoppeTweNinAB/CoppeTweNinAB.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/CoppeTweNinAB/CoppeTweNinAB.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/CoppeTweNinAB/CoppeTweNinAB.woff') format('woff'),
+        url('../fonts/copperplateGothic/CoppeTweNinAB/CoppeTweNinAB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Copperplate Gothic 29BC';;
+  src : url('../fonts/copperplateGothic/CoppeTweNinBC/CoppeTweNinBC.eot');
+  src : url('../fonts/copperplateGothic/CoppeTweNinBC/CoppeTweNinBC.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/CoppeTweNinBC/CoppeTweNinBC.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/CoppeTweNinBC/CoppeTweNinBC.woff') format('woff'),
+        url('../fonts/copperplateGothic/CoppeTweNinBC/CoppeTweNinBC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Copperplate Gothic 30AB';;
+  src : url('../fonts/copperplateGothic/coppeThiAB/CoppeThiAB.eot');
+  src : url('../fonts/copperplateGothic/coppeThiAB/CoppeThiAB.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/coppeThiAB/CoppeThiAB.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/coppeThiAB/CoppeThiAB.woff') format('woff'),
+        url('../fonts/copperplateGothic/coppeThiAB/CoppeThiAB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Copperplate Gothic 30BC';;
+  src : url('../fonts/copperplateGothic/coppeThiBC/CoppeThiBC.eot');
+  src : url('../fonts/copperplateGothic/coppeThiBC/CoppeThiBC.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/coppeThiBC/CoppeThiBC.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/coppeThiBC/CoppeThiBC.woff') format('woff'),
+        url('../fonts/copperplateGothic/coppeThiBC/CoppeThiBC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Copperplate Gothic 31AB';;
+  src : url('../fonts/copperplateGothic/coppeThiOneAB/CoppeThiOneAB.eot');
+  src : url('../fonts/copperplateGothic/coppeThiOneAB/CoppeThiOneAB.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/coppeThiOneAB/CoppeThiOneAB.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/coppeThiOneAB/CoppeThiOneAB.woff') format('woff'),
+        url('../fonts/copperplateGothic/coppeThiOneAB/CoppeThiOneAB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Copperplate Gothic 31BC';;
+  src : url('../fonts/copperplateGothic/coppeThiOneBC/CoppeThiOneBC.eot');
+  src : url('../fonts/copperplateGothic/coppeThiOneBC/CoppeThiOneBC.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/coppeThiOneBC/CoppeThiOneBC.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/coppeThiOneBC/CoppeThiOneBC.woff') format('woff'),
+        url('../fonts/copperplateGothic/coppeThiOneBC/CoppeThiOneBC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Copperplate Gothic 32AB';;
+  src : url('../fonts/copperplateGothic/coppeThiTwoAB/CoppeThiTwoAB.eot');
+  src : url('../fonts/copperplateGothic/coppeThiTwoAB/CoppeThiTwoAB.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/coppeThiTwoAB/CoppeThiTwoAB.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/coppeThiTwoAB/CoppeThiTwoAB.woff') format('woff'),
+        url('../fonts/copperplateGothic/coppeThiTwoAB/CoppeThiTwoAB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Copperplate Gothic 32BC';;
+  src : url('../fonts/copperplateGothic/coppeThiTwoBC/CoppeThiTwoBC.eot');
+  src : url('../fonts/copperplateGothic/coppeThiTwoBC/CoppeThiTwoBC.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/coppeThiTwoBC/CoppeThiTwoBC.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/coppeThiTwoBC/CoppeThiTwoBC.woff') format('woff'),
+        url('../fonts/copperplateGothic/coppeThiTwoBC/CoppeThiTwoBC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Copperplate Gothic 33BC';;
+  src : url('../fonts/copperplateGothic/coppeThiThrBC/CoppeThiThrBC.eot');
+  src : url('../fonts/copperplateGothic/coppeThiThrBC/CoppeThiThrBC.eot?#iefix') format('eot'),
+        url('../fonts/copperplateGothic/coppeThiThrBC/CoppeThiThrBC.woff2') format('woff2'),
+        url('../fonts/copperplateGothic/coppeThiThrBC/CoppeThiThrBC.woff') format('woff'),
+        url('../fonts/copperplateGothic/coppeThiThrBC/CoppeThiThrBC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+/* end copperplate */
+
+/* Lato downloaded from google fonts */
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-Hairline.eot');
+  src : url('../fonts/lato/Lato-Hairline.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-Hairline.woff2') format('woff2'),
+        url('../fonts/lato/Lato-Hairline.woff') format('woff'),
+        url('../fonts/lato/Lato-Hairline.ttf') format('truetype');
+  font-weight: 100; /* lato thin */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-HairlineItalic.eot');
+  src : url('../fonts/lato/Lato-HairlineItalic.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-HairlineItalic.woff2') format('woff2'),
+        url('../fonts/lato/Lato-HairlineItalic.woff') format('woff'),
+        url('../fonts/lato/Lato-HairlineItalic.ttf') format('truetype');
+  font-weight: 100; /* lato thin italic 400, 700, 900 */
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-Light.eot');
+  src : url('../fonts/lato/Lato-Light.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-Light.woff2') format('woff2'),
+        url('../fonts/lato/Lato-Light.woff') format('woff'),
+        url('../fonts/lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300; /* lato light */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-LightItalic.eot');
+  src : url('../fonts/lato/Lato-LightItalic.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-LightItalic.woff2') format('woff2'),
+        url('../fonts/lato/Lato-LightItalic.woff') format('woff'),
+        url('../fonts/lato/Lato-LightItalic.ttf') format('truetype');
+  font-weight: 300; /* lato light italic */
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-Regular.eot');
+  src : url('../fonts/lato/Lato-Regular.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/lato/Lato-Regular.woff') format('woff'),
+        url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+  font-weight: 400; /* lato regular */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-Italic.eot');
+  src : url('../fonts/lato/Lato-Italic.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-Italic.woff2') format('woff2'),
+        url('../fonts/lato/Lato-Italic.woff') format('woff'),
+        url('../fonts/lato/Lato-Italic.ttf') format('truetype');
+  font-weight: 400; /* lato italic */
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-Bold.eot');
+  src : url('../fonts/lato/Lato-Bold.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/lato/Lato-Bold.woff') format('woff'),
+        url('../fonts/lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 700; /* lato bold */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-BoldItalic.eot');
+  src : url('../fonts/lato/Lato-BoldItalic.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-BoldItalic.woff2') format('woff2'),
+        url('../fonts/lato/Lato-BoldItalic.woff') format('woff'),
+        url('../fonts/lato/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: 700; /* lato bold italic */
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-Black.eot');
+  src : url('../fonts/lato/Lato-Black.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-Black.woff2') format('woff2'),
+        url('../fonts/lato/Lato-Black.woff') format('woff'),
+        url('../fonts/lato/Lato-Black.ttf') format('truetype');
+  font-weight: 900; /* lato black */
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'lato';
+  src : url('../fonts/lato/Lato-BlackItalic.eot');
+  src : url('../fonts/lato/Lato-BlackItalic.eot?#iefix') format('eot'),
+        url('../fonts/lato/Lato-BlackItalic.woff2') format('woff2'),
+        url('../fonts/lato/Lato-BlackItalic.woff') format('woff'),
+        url('../fonts/lato/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: 900; /* lato black italic */
+  font-style: italic;
+  font-variant: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+/* end lato */
+
+
+/* copperplate and copperplate condensed typekit */
+.copperplate {
+  font-family: 'copperplate', serif;
+  font-variant: normal;
+  font-size: .9em;
+}
+.copperplateLight {
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: .03em;
+  word-spacing: .03em;
+}
+.copperplateMedium {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: .02em;
+  word-spacing: .04em;
+}
+.copperplateBold {
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .03em;
+  word-spacing: .04em;
+}
+.copperplateCondensed {
+  font-family: 'copperplate-condensed', serif;
+  font-variant: normal;
+  font-size: .9em;
+}
+.copperplateCondLight {
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: .03em;
+  word-spacing: .03em;
+}
+.copperplateCondMedium {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: .02em;
+  word-spacing: .04em;
+}
+.copperplateCondBold {
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .03em;
+  word-spacing: .04em;
+}
+/* begin Copperplate Gothic Converted */
+.copperplateTwentyNineAB {
+  font-family: 'Copperplate Gothic 29AB';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+.copperplateTwentyNineBC {
+  font-family: 'Copperplate Gothic 29BC';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+.copperplateThirtyAB {
+  font-family: 'Copperplate Gothic 30AB';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+.copperplateThirtyBC {
+  font-family: 'Copperplate Gothic 30BC';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+.copperplateThirtyOneAB {
+  font-family: 'Copperplate Gothic 31AB';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+.copperplateThirtyOneBC {
+  font-family: 'Copperplate Gothic 31BC';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+.copperplateThirtyTwoAB {
+  font-family: 'Copperplate Gothic 32AB';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+.copperplateThirtyTwoBC {
+  font-family: 'Copperplate Gothic 32BC';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+.copperplateThirtyThreeBC {
+  font-family: 'Copperplate Gothic 33BC';
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+/* end Copperplate Gothic Converted  */
+.lato {
+  font-family: 'Lato', Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans',
+    'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed',
+    'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue',
+    Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+}
+.latoThin {
+  font-style: normal;
+  font-weight: 100;
+}
+.latoThinItalic {
+  font-style: italic;
+  font-weight: 100;
+}
+.latoLight {
+  font-style: normal;
+  font-weight: 300;
+}
+.latoLightItalic {
+  font-style: italic;
+  font-weight: 300;
+}
+.latoReg {
+  font-style: normal;
+  font-weight: 400;
+}
+.latoRegItalic {
+  font-style: italic;
+  font-weight: 400;
+}
+.latoBold {
+  font-style: normal;
+  font-weight: 700;
+}
+.latoBoldItalic {
+  font-style: italic;
+  font-weight: 700;
+}
+.latoBlack {
+  font-style: normal;
+  font-weight: 900;
+}
+.latoBlackItalic {
+  font-style: italic;
+  font-weight: 900;
+}
+/* colors in flag #002868 (blue) and #BF0A30 (red) */
+
+
+body {
+  font-family: 'Lato', Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans',
+    'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed',
+    'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue',
+    Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+  background-color: rgba(0,40,104,1.0);
+  color: rgba(255,255,255,1.0);
+  background-image: url("../img/politicalSpectrum1.png");
+  background-size: cover;
+  background-position: top 400px left 0px;
+  background-repeat: no-repeat;
+}
+h1, h2 {
+  font-family: 'copperplate', serif;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: .03em;
+  word-spacing: .03em;
+  color: rgba(191,10,48,1.0);
+  text-align:center;
+}
+.intro p {
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+form {
+  background-color:rgba(255,255,255,.8);
+  margin:1em;
+  padding:1em;
+  color:rgba(0,40,104,.8);
+}
