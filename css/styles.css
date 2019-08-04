@@ -475,7 +475,7 @@ body {
   background-color: rgba(0,40,104,1.0);
   color: rgba(255,255,255,1.0);
   background-image: url("../img/politicalSpectrum1.png");
-  background-size: cover;
+  background-size: contain;
   background-position: top 400px left 0px;
   background-repeat: no-repeat;
 }
@@ -488,6 +488,7 @@ h1, h2 {
   word-spacing: .03em;
   color: rgba(191,10,48,1.0);
   text-align:center;
+  line-height: .8;
 }
 .intro p {
   text-align: center;
