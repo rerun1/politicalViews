@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
-    <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
     <title>Where do you fall on the political spectrum?</title>
   </head>
   <body>
@@ -19,36 +20,309 @@
           <img src="img/marianneWilliams.jpg" alt="marianne williams">
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-12 intro">
+      <div class="row">
+        <div id="intro" class="col-12 intro">
           <h1 class="mt-3 mb-2">Where do you fall on the spectrum?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>You may find some of these questions are difficult to answer. For example, you may partly agree with both statements, or feel that neither quite describes your view. That’s OK. In those cases, pick the answer that comes closest to your view, even if it isn’t exactly right.</p>
         </div>
       </div>
+      <div class="row">
+        <div id="showTypology" class="col-12 typology">
+          <p id="typology"></p>
+          <img id="imgLeader" src="img/obama.jpg" alt="a better president than trump, president obama">
+        </div>
+      </div>
+      <!-- <form id="pollVoter" class="needs-validation" novalidate> -->
       <form id="pollVoter">
         <div class="form-row form-inline">
-          <div class="col-3 form-group">
+          <div class="col-sm-3 form-group">
             <label for="age">Age</label>
-            <input class="form-control" type="number" id="age">
+            <input class="form-control ml-2" type="number" id="age" size="3" maxlength="3" style="width: 5em" required>
+            <div class="invalid-feedback">
+              Please enter your age in whole numbers
+            </div>
           </div>
-          <div class="col-3 form-group">
-            <label for="gender">Gender</label>
-            <select id="gender">
-              <option selected>Female</option>
-              <option>Male</option>
+          <div class="col-sm-4 form-group">
+            <label for="gender">Pronoun</label>
+            <select class="form-control ml-2" id="gender" required>
+              <option value="">Choose...</option>
+              <option value="female">She/her</option>
+              <option value="male">He/him</option>
+              <option value="binary">They/Them</option>
             </select>
+            <div class="invalid-feedback">
+              Please select your pronoun preference
+            </div>
           </div>
-          <div class="col-6 form-group">
-            <label for="party">Party Affiliation</label>
-            <select id="party">
-              <option selected>Democrat</option>
-              <option>Republican</option>
-              <option>Independent</option>
-              <option>Undeclared</option>
+          <div class="col-sm-5 form-group">
+            <label for="party">Party</label>
+            <select class="form-control ml-2" id="party" required>
+              <option value="">Choose...</option>
+              <option value="democrat">Democrat</option>
+              <option value="republican">Republican</option>
+              <option value="independent">Independent</option>
+              <option value="undeclared">Undeclared</option>
             </select>
+            <div class="invalid-feedback">
+              Please select a party preference
+            </div>
           </div>
         </div>
-      </form
+        <!-- begin question 1 -->
+        <div class="form-row">
+          <div class="col-sm-12 mt-3">
+            <h4 class="mb-1">Which best describes your belief about abortion:</h4>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="question1radio1"class="custom-control-input" value="conservative" name="question1" required>
+              <label for="question1radio1" class="custom-control-label">Laws should restrict abortion in all or most cases.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="question1radio2" class="custom-control-input" value="liberal" name="question1" required>
+              <label for="question1radio2" class="custom-control-label">A woman's control over her body is a fundamental right.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="question1radio3" class="custom-control-input" value="authoritarian" name="question1" required>
+              <label for="question1radio3" class="custom-control-label">Some people should not be allowed to reproduce.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="question1radio4"class="custom-control-input" value="radical" name="question1" required>
+              <label for="question1radio4" class="custom-control-label">All laws restricting abortions should be eliminated.</label>
+            </div>
+          </div>
+          <div class="invalid-feedback">
+            Please select one view
+          </div>
+        </div>
+        <!-- end question 1 -->
+        <!-- begin question 2-->
+        <div class="form-row">
+          <div class="col-sm-12 mt-3">
+            <h4 class="mb-1">Unions...</h4>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question2radio1" class="custom-control-input" type="radio" value="liberal" name="question2" required>
+              <label for="question2radio1" class="custom-control-label">were indispensible in establishing the middle class.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input  id="question2radio2" class="custom-control-input" type="radio" value="conservative" name="question2" required>
+              <label for="question2radio2" class="custom-control-label">were and are impediments to healthy economic growth.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input  id="question2radio3" class="custom-control-input" type="radio" value="authoritarian" name="question2" required>
+              <label for="question2radio3" class="custom-control-label">should never have been allowed to form.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input  id="question2radio4" class="custom-control-input" type="radio" value="radical" name="question2" required>
+              <label for="question2radio4" class="custom-control-label">laws regulating unions should be eliminated.</label>
+            </div>
+            <div class="invalid-feedback">
+              Please select one view
+            </div>
+          </div>
+        </div>
+        <!-- end question 2-->
+        <!-- begin question 3 -->
+        <div class="form-row">
+          <div class="col-sm-12 mt-3">
+            <h4 class="mb-1">Our electoral system:</h4>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input  id="question3radio1" class="custom-control-input" type="radio" value="radical" name="question3" required>
+              <label for="question3radio1" class="custom-control-label">Needs to be changed, it isn't working.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input  id="question3radio2"  class="custom-control-input" type="radio" value="liberal" name="question3" required>
+              <label for="question3radio2" class="custom-control-label">Is working but could use a few changes.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question3radio3" class="custom-control-input" type="radio" value="conservative" name="question3" required>
+              <label for="question3radio3" class="custom-control-label">Traditionally works, shouldn't be changed now.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question3radio4" class="custom-control-input" type="radio" value="authoritarian" name="question3" required>
+              <label for="question3radio4" class="custom-control-label">Should be abolished, adopt one totally controlled by government with no opportunity to mess around with it, healthcare is too important.</label>
+            </div>
+            <div class="invalid-feedback">
+              Please select one view
+            </div>
+          </div>
+        </div>
+        <!-- end question 3-->
+        <!-- begin question 4 -->
+        <div class="form-row">
+          <div class="col-sm-12 mt-3">
+            <h4 class="mb-1">Healthcare should be: </h4>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question4radio1" class="custom-control-input" type="radio" value="liberal" name="question4" required>
+              <label for="question4radio1" class="custom-control-label">Available to everyone, subsidized for those unable to afford it.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question4radio2" class="custom-control-input" type="radio" value="conservative" name="question4" required>
+              <label for="question4radio2" class="custom-control-label">Available to everyone, but not a one-payer (government) system.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question4radio3" class="custom-control-input" type="radio" value="authoritarian" name="question4" required>
+              <label for="question4radio3" class="custom-control-label">Government should have more control over how the system is run.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question4radio4" class="custom-control-input" type="radio" value="radical" name="question4" required>
+              <label for="question4radio4" class="custom-control-label">Eliminate third-party payers entirely, all health-care providers should be non-profit entities.</label>
+            </div>
+            <div class="invalid-feedback">
+              Please select one view
+            </div>
+          </div>
+        </div>
+        <!-- end question 4-->
+        <!-- begin question 5 -->
+        <div class="form-row">
+          <div class="col-sm-12 mt-3">
+            <h4 class="mb-1">Which statement best represents your political belief</h4>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question5radio1" class="custom-control-input" type="radio" value="conservative" name="question5" required>
+              <label for="question5radio1" class="custom-control-label">A well-run political party adopts an attitude, a constant force, performing a timeless function in the development of a free society, corresponding to a deep and permanent requirements of human nature itself. An exemplarly political party has a commitment to the ideals of order, both secular and religious.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question5radio2" class="custom-control-input" type="radio" value="liberal" name="question5" required>
+              <label for="question5radio2" class="custom-control-label">The first concern of a political party should be to protect and enhance the freedom of the individual. Government is necessary to protect individuals from being harmed by others, but government can also pose a threat to liberty. Government should be neutral between competing conceptions of the good (justice).</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input id="question5radio3" class="custom-control-input" type="radio" value="authoritarian" name="question5" required>
+              <label for="question5radio3" class="custom-control-label">A political party should promote a strong central power and limited political freedoms. Individual freedoms are subordinate to the state, and there is no constitutional accountability that protects the individual to the exclusion of what the government determines to be just.</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <div class="custom-control custom-radio">
+              <input  id="question5radio4" class="custom-control-input" type="radio" value="radical" name="question5" required>
+              <label for="question5radio4" class="custom-control-label">The political party I support is working effectively to correct the problems our country faces using dramatic changes to the current government.</label>
+            </div>
+            <div class="invalid-feedback">
+              Please select one view
+            </div>
+          </div>
+        </div>
+        <!-- end question 5 -->
+        <!-- begin question 6 -->
+        <div class="form-row">
+          <div class="col-sm-12 mt-3">
+            <h4 class="mb-1">The Republican Party</h4>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <select id="republicanBias" class="custom-select" required>
+              <option value="">Your view...</option>
+              <option value="Republican party is too extreme">Republican party is too extreme</option>
+              <option value="Republican party has high ethical standards">Has high ethical standards</option>
+              <option value="Republican party is too willing to cut government programs, even when they work">Republican party is too willing to cut government programs, even when they work</option>
+              <option value"Republican party cares about the middle class">Republican party cares about the middle class</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select one view
+            </div>
+          </div>
+        </div>
+        <!-- end question 6-->
+        <!-- begin question 7 -->
+        <div class="form-row">
+          <div class="col-sm-12 mt-3">
+            <h4 class="mb-1">The Democratic Party</h4>
+          </div>
+        </div>
+        <div class="form-row ml-1">
+          <div class="col-sm-12">
+            <select id="democratBias" class="custom-select" required>
+              <option value="">Your view...</option>
+              <option value="Democratic party is too extreme">Democratic party is too extreme</option>
+              <option value="Democratic party has high ethical standards">Has high ethical standards</option>
+              <option value="Democratic party is too willing to cut government programs, even when they work">Democratic party is too willing to cut government programs, even when they work</option>
+              <option value"Democratic party cares about the middle class">Democratic party cares about the middle class</option>
+            </select>
+            </select>
+            <div class="invalid-feedback">
+              Please select one view
+            </div>
+          </div>
+        </div>
+          <!-- end question 7-->
+          <button type="submit" class="btn btn-danger mt-4">Find your typology</button>
+      </form>
     </div>
   </body>
 </html>

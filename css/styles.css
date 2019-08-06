@@ -475,11 +475,11 @@ body {
   background-color: rgba(0,40,104,1.0);
   color: rgba(255,255,255,1.0);
   background-image: url("../img/politicalSpectrum1.png");
-  background-size: contain;
+  background-size: cover cover;
   background-position: top 400px left 0px;
   background-repeat: no-repeat;
 }
-h1, h2 {
+h1, h2, h4 {
   font-family: 'copperplate', serif;
   font-variant: normal;
   font-style: normal;
@@ -487,8 +487,13 @@ h1, h2 {
   letter-spacing: .03em;
   word-spacing: .03em;
   color: rgba(191,10,48,1.0);
-  text-align:center;
+  text-align: center;
   line-height: .8;
+}
+h4 {
+  text-align: left;
+  letter-spacing: 0em;
+  word-spacing: 0em;
 }
 .intro p {
   text-align: center;
@@ -501,4 +506,16 @@ form {
   margin:1em;
   padding:1em;
   color:rgba(0,40,104,.8);
+}
+.radioStatement {
+  font-size:.9em;
+}
+.typology p {
+  font-size: 2em;
+  text-align: center;
+  margin-top:2em;
+  color: rgba(191,10,48,1.0);
+}
+#showTypology {
+  display: none;
 }
